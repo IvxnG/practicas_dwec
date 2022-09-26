@@ -1,1 +1,0 @@
-console.log("Arancando la página");
