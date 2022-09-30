@@ -2,7 +2,7 @@ let numero = prompt('Introduce un número');
 
 console.log(Number.isInteger(+numero));
 
-while(Number.isInteger(+numero) == false){
+while(Number.isInteger(+numero) == false || numero == `` || numero == null){
     numero = prompt('Introduce un número');
 }
 
