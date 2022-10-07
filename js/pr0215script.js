@@ -1,8 +1,10 @@
-let numero1 =  prompt('Introduce el primer número.');
-let numero2 =  prompt('Introduce el segundo número.');
+let numeroA =  prompt('Introduce el primer número.');
+let numeroB =  prompt('Introduce el segundo número.');
 let operador =  prompt('Operador.');
 let resultado = 1;
 
+let numero1 = Number(numeroA);
+let numero2 = Number(numeroB);
 function calc(numero1, numero2,operador){
     switch(operador){
         case '+':
