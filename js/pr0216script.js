@@ -1,20 +1,42 @@
 let cantidad = prompt('Cantidad a convertir');
-let unidad = prompt('Unidad de medida')
+let unidad = prompt('Unidad de medida');
 let bytes = 0;
-convertToBytes(capacidad, unidad){
+
+function convertToBytes( cantidad, unidad ){
 
     switch(unidad){
-        case 'B':
-        case 'Byte':
-            resultado = numero1 - numero2;
+        case "B":
+        case "Byte":
+            bytes = cantidad * 1;
         break;
-        case 'KB':
-        case 'Kilobyte':
-                resultado = numero1 - numero2;
-                break;
-        
+        case "KB":
+        case "Kilobyte":
+            bytes = cantidad * 1000;
+        break;
+        case "MB":
+        case "Megabyte":
+            bytes = cantidad * 1000000;
+        case "GB":
+        case "Gigabyte":
+            bytes = cantidad * 1000000000;
+        break;
+        case "TB":
+        case "Terabyte":
+            bytes = cantidad * 1000000000000;
+        break;
+        case "PB":
+        case "Petabyte":
+            bytes = cantidad * 1000000000000000;
+            break;
+        case "EB":
+        case "Exabyte":
+            bytes = cantidad * 1000000000000000000;
+        break;
         default:
-            resultado = 'Operador no válido';
+            bytes = 'No válido';
+        break;
     }
-    return bytes;
+    return bytes + " bytes";
 } 
+
+console.log(convertToBytes( cantidad, unidad)); 

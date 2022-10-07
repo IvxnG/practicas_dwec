@@ -1,4 +1,6 @@
 let k =  prompt('Números primos que se mostrarán.');
+let impreso = 0;
+let contador = 1;
 
 function isPrime(numero){
 	if (numero == 0 || numero == 1 || numero == 4) return false;
@@ -8,12 +10,13 @@ function isPrime(numero){
 	return true;
 }
 
-if(true){
-    for(let i = 0; i <= k ; i++){
-        if(isPrime(i) == true){
-            console.log(i);
-        }
-        
+while(k != impreso){
+    contador++;
+    if(isPrime(contador)){
+        console.log(contador);
+        impreso++;
     }
 }
+
+
 

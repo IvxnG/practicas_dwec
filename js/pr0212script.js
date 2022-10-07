@@ -1,6 +1,6 @@
 let numero = prompt('Introduce un número.');
 
-while(Number.isInteger(+numero) != 0 && +numero != ''){
+while(+numero != 0){
     numero = prompt('Introduce un número.');
     console.log("¿es primo? ", isPrime(numero));
     
