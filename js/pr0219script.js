@@ -1,5 +1,5 @@
-let n = prompt('Primer número (n)');
-let k = prompt('Segundo número (k)');
+let n = Number(prompt('Primer número (n)'));
+let k = Number(prompt('Segundo número (k)'));
 let result = 0;
 
 function sumOfMults(n, k){

@@ -1,10 +1,10 @@
 let n = prompt ('Número (n)');
-let fibonacii = 2;
 
 function getFibonacii(n){
-    for (let i = 1; i <= n ; i++) {
-		fibonacii = fibonacii + (fibonacii-1);
-	}
-    return fibonacii;
+    if (((n == 1)) || (n == 0)){
+        return n;
+    }else{ 
+        return getFibonacii(n-1) + getFibonacii(n-2);
+    }
 }
 console.log(getFibonacii(n));
