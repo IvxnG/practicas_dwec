@@ -26,6 +26,6 @@ function insertObjects(user1,user2){
             }
         }
     }
-    console.log(user3);
+    return user3;
 }
 console.log(insertObjects(user1,user2));

@@ -6,6 +6,6 @@ let user = {
 
 function cloneObject(user){
     let userClone = Object.assign({}, user);
-    console.log(userClone);
+    return userClone;
 }
 console.log(cloneObject(user));

@@ -22,6 +22,6 @@ function mergeObjects(user1,user2){
         ...user1,
         ...user2,
     };
-    console.log(userList);
+    return userList;
 }
 console.log(mergeObjects(user1,user2));
