@@ -2,8 +2,7 @@ let fechas = ['01-05-2022', '02-12-2018', '14-02-2020'];
 
 function sortDates(arr){
     // arr.forEach(element => {
-    //     let fechaSplit = element.split('-');
-
+    //    
     //     let anio = fechaSplit[2];
     //     let mes = fechaSplit[1];
     //     let dia = fechaSplit[0];

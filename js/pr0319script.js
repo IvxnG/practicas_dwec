@@ -3,7 +3,7 @@ let suma = 0;
 
 function max(arr){
     suma = arr.reduce( (acum, item, index, array)  => {
-        return acum + item;
+        return (item > acum) ? item : acum;
         }, 0 )
     return suma;
 };

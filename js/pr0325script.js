@@ -6,12 +6,11 @@ let modulos = [
     DESPLIEGUE =[5,5,7],
     EMPRESA =[7,6,7],
 ];
-
+let suma = 0;
 
 function getAverageGrade(str){
-
-    let sum = modulos.str.reduce((previous, current) => current += previous);
-    let avg = sum / modulos.str.length;
+    let total = str.reduce((a, b) => Number(a) + Number(b), 0);
+    let avg = total / str.length;
     console.log("La media de notas del módulo es "+ avg);
 };
 console.log(getAverageGrade(modulo));
