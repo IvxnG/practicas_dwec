@@ -31,9 +31,9 @@ let arr = [
 let str = "DWEC";
 function getAlumnosByCiclo(str){
     arr.forEach(alumno => {
-        if(alumno.notas[str]){
+        if(alumno.ciclo[str]){
             console.log(alumno.nombre + " " + alumno.ape1 + " " + alumno.ape2);
         }
     });
-};
+};  
 console.log(getAlumnosByCiclo(str));

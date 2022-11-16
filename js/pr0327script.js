@@ -44,6 +44,8 @@ let arr = [
 let str = "DWES";
 let suma = 0;
 function getNumberOfAlumnos(str){
+    //return arr.filter((item) => item.ciclo == str)
+    //           .length;
     arr.forEach(alumno => {
         if(alumno.notas[str]){
             suma += 1;
