@@ -1,9 +1,21 @@
-let divs = document.querySelectorAll('div');
-    divs.forEach( (div) => {
-        div.addEventListener('click', click);
+let lis = document.querySelectorAll('li');
+    lis.forEach( (li) => {
+        li.addEventListener('click', click);
 } )
 function click(event) {
     let target = event.target;
-    //target.classList.add('selected');
-    target.classList.toggle('selected');
+    if (event.ctrlKey) {
+        target.classList.toggle('selected'); 
+    } else {
+        if( target.classList.contains('selected')){
+            lis.forEach( (li) => {
+                li.classList.remove('selected');
+            })
+        } else{
+            lis.forEach( (li) => {
+                li.classList.remove('selected');
+            })
+            target.classList.add('selected');
+        }
+    }
 }

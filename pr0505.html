@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pr0505</title>
+    <style>
+        #header{
+            width: 180px;
+            height: 100%;
+            background-color: darkblue;
+            text-align: center;
+            color: black;
+            font-size: 30px;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            padding-top: 17px;
+        }
+        #contenedor{
+            width: 180px;
+            height: 100%;
+            background-color: darkblue;
+            text-align: center;
+            color: black;
+            font-size: 30px;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            padding-top: 17px;
+            font-family:sans-serif;
+            color: white;
+            position:absolute;
+            border: 2px solid lightgreen;
+        }
+        #objeto{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position:relative;
+            top: 290px;
+            left: 290px;
+        }
+        #objeto:hover{
+            cursor: pointer;
+        }
+        #tiempo{
+            color: lightgreen;
+            font-size: 50px;
+        }
+        #puntuacion{
+            color: lightgreen;
+            font-size: 90px;
+        }
+        #start{
+            width: 60px;
+            height: 30px;
+            border: 2px solid lightgreen;
+            color: lightgreen;
+            background-color: azure;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 25px;
+            position: relative;
+            left: 10;
+        }
+        #start:hover{
+            cursor: pointer;
+            background-color: lightgreen;
+            color: black;
+        }
+        #stop{
+            width: 60px;
+            height: 30px;
+            border: 2px solid lightgreen;
+            color: lightgreen;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            text-align: center;
+            font-size: 25px;
+            position: relative;
+            left: 10;
+        }
+        #stop:hover{
+            cursor: pointer;
+            background-color: lightgreen;
+            color: black;
+        }
+        #select-diff{
+            display: block;
+        }
+        p{
+            display: inline;
+            margin:3px;
+            padding: 5px;
+            background-color: rgb(255, 255, 255);
+            color:lightgreen;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 25px;
+            border: 2px solid lightgreen;
+        }
+        p:hover{
+            cursor: pointer;
+            background-color: lightgreen;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        Puntuacion
+        <div id="puntuacion">0</div> 
+        <br><br>
+        Tiempo
+        <div id="tiempo">0</div>
+        <br><br>
+        <p id="start">Start</p>
+        <p id="stop">Stop</p>  
+        <br><br> 
+        <div id="select-diff">
+            Dificultad
+            <p id="diff">1</p><p id="diff">2</p><p id="diff">3</p><p id="diff">4</p><p id="diff">5</p>
+        </div>
+    </div>
+   
+    <div id="objeto"></div>
+    <script src="js/pr0505script.js"></script>
+</body>
+</html>
