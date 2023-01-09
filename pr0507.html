@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background: rgb(224,216,182);
+            background: radial-gradient(circle, rgba(224,216,182,1) 0%, rgba(161,162,64,1) 100%);
+        }
+        .formulario {
+            text-align: center;
+            margin:0 auto;
+            border: solid 2px black;
+            width: 20%;
+            border-radius: 7px;
+            background-color: goldenrod;
+            margin-top: 200px;
+            padding: 30px;
+        }
+        input {
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .noValido{
+            text-align: center;
+            width: 100%;
+            bottom: 0px;
+            background-color: red; 
+            color:black;
+            height: 70px;
+            text-transform: uppercase ;
+            padding-top: 40px;
+            font-size:30px;
+        }
+        .seguridad{
+            text-align: center;
+            padding: 3px;
+            margin-bottom: 10px;
+            color:white;
+            border: solid 1px white;
+        }
+        .igualPass{
+            text-align: center;
+            padding: 3px;
+            margin-bottom: 10px;
+            color:white;
+            border: solid 1px white;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="formulario" name="formulario">
+        <form action="js/pr0507script.js" method="post" >
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email"><br>
+
+            <label for="pass1">Contraseña</label><br>
+            <input type="password" name="pass1" id="pass1"><br>
+            <div class="seguridad" id="seguridad">Seguridad contraseña</div>
+
+            <label for="pass2">Repite la contraseña</label><br>
+            <input type="password" name="pass2" id="pass2"><br>
+            <div  id="igualPass"></div>
+
+            <input type="button" value="ENVIAR" id="enviar">
+        </form>
+    </div><br><br>
+    <div id="error"></div>
+    
+    <script src="js/pr0507script.js"></script>
+</body>
+</html>

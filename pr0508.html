@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Localidades</title>
+    <style>
+       body {
+            font-family: sans-serif;
+            background: rgb(224,216,182);
+            background: radial-gradient(circle, rgba(224,216,182,1) 0%, rgba(161,162,64,1) 100%);
+        }
+        .formulario {
+            text-align: center;
+            margin:0 auto;
+            border: solid 2px black;
+            width: 20%;
+            border-radius: 7px;
+            background-color: goldenrod;
+            margin-top: 200px;
+            padding: 30px;
+        }
+        
+        input {
+            border-radius: 5px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="formulario" name="formulario">
+        <form action="js/pr0508script.js" method="post">
+            <label for="comunidad">Comunidad</label><br>
+            <select name="comunidad" id="comunidad">
+                <option value="castillayleon">Castilla y León</option>
+                <option value="castillalamancha">Castilla-La mancha</option>
+                <option value="cataluña">Cataluña</option>
+                <option value="andalucia">Andalucia</option>
+            </select><br>
+
+            <label for="provincia">Provincia</label><br>
+            <select name="provincia" id="provincia">
+                
+            </select> <br>
+
+            <label for="localidad">Localidad</label><br>
+            <select name="localidad" id="localidad">
+                
+            </select><br><br>
+
+            <input type="button" value="ENVIAR" id="enviar">
+        </form>
+    </div>
+    <script src="js/localidades.js"></script>
+    <script src="js/pr0508script.js"></script>
+    
+</body>
+</html>
